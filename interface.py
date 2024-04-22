@@ -19,7 +19,9 @@ def adicionar_item():
 def editar_item():
     nome = nome_entry.get()
     quantidade = quantidade_entry.get()
-    conexao.Editar(nome, quantidade)
+    preco = preco_entry.get()
+    local = onde_entry.get()
+    conexao.Editar(nome, quantidade, preco, local)
     lista_atualiza()
 
 def apagar_item():
